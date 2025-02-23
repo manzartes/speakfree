@@ -1,0 +1,94 @@
+/* Fonte principal */
+body {
+  font-family: 'Lexend', sans-serif;
+  background: linear-gradient(to bottom, #8EC5FC, #E0C3FC);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 400px;
+  max-width: 90%;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input styling */
+.input-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  background: #6A5ACD;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #483D8B;
+}
+
+/* Mensagens com fundo diferenciado */
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* Mensagem do usuário */
+.message.user {
+  background-color: rgba(173, 216, 230, 0.2); /* Azul claro, quase invisível */
+  align-self: flex-end;
+}
+
+/* Mensagem da IA */
+.message.ai {
+  background-color: rgba(100, 149, 237, 0.3); /* Azul mais escuro */
+  align-self: flex-start;
+}
+
+/* Indicador de digitando */
+#typing-indicator {
+  font-style: italic;
+  color: #777;
+  margin-top: 5px;
+}
